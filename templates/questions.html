@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    questions
+
+{% endblock %}
+
+{% block content %}
+
+		<h2 style="font-family: 'Playfair Display', serif; text-align: center;">get yourself a song</h2>
+<h6 style="font-family: 'Playfair Display', serif; text-align: center; color: #516e99b2""> on this website you can find a song with a music video based on the songs' keywords – the words that describe the lyrics best. there are not so many songs in our database yet and, therefore, not each word that you type will turn out to be in a song and describe it. you can try some simple words like <i>happy</i>, <i>sad</i>, <i>love</i>, or even <i>frog</i> </h6>
+		<br>
+		<form class="container" action="/process">
+			<p class="col-md-6" style="font-family: 'Playfair Display', serif;">what age group are you in?</p>
+					<table class="col-md-8">
+						<tr>
+							<td><input class="radio" type="radio" name="age" value="1"></td>
+							<td><input class="radio" type="radio" name="age" value="2"></td>
+							<td><input class="radio" type="radio" name="age" value="3"></td>
+							<td><input class="radio" type="radio" name="age" value="4"></td>
+							<td><input class="radio" type="radio" name="age" value="5"></td>
+						</tr>
+						<tr style="font-family: 'Playfair Display', serif;">
+							<td><=13</td>
+							<td>14<=20</td>
+							<td>21<=30</td>
+							<td>31<=45</td>
+							<td>>=46</td>
+						</tr>
+					</table>
+			<br>
+			<div class="row">
+				<div class="col-md-4" style="font-family: 'Playfair Display', serif;">write any word that you want to be in the song:</div>
+				<div class="col-md-4"><input type="text" name="your_word" style="font-family: 'Playfair Display', serif; color:#516e99;" placeholder="frog"></div>
+			</div>
+			<br>
+			<div class="row">
+				<input class="submit" style="font-family: 'Playfair Display', serif; color:#516e99;" type="submit" name="submit" value="send">
+			</div>
+		</form>
+{% endblock %}

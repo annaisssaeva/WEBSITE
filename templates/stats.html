@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    statistics
+
+{% endblock %}
+
+{% block content %}
+    <h3 style="font-family: 'Playfair Display', serif; text-align: center;">some statistics about those who visited the site</h3>
+
+        <br>
+
+            <h6 style="font-family: 'Playfair Display', serif; text-align: center;">on averege people {{ all_info['age_freq']}}</h6>
+
+        <br>
+        <br>
+
+            <h6 style="font-family: 'Playfair Display', serif; text-align: center;">number of times this form was used is {{ all_info['total_count'] }}</h6>
+
+
+
+{% endblock %}
